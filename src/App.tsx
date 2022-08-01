@@ -69,7 +69,7 @@ function App() {
     <Wrapper>
       <h1>Here's Quiz</h1>
       {gameOver || userAnswers.length === TOTAL_QUESTIONS ? 
-        (<button className='start' onClick={startTrivia}>Start</button>)
+        (<button className='start' onClick={startTrivia}>Start a new game</button>)
         : null
       }
       {!gameOver ? <p className='score'>Score: {score}</p> : null}
